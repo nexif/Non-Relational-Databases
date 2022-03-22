@@ -1,5 +1,5 @@
 MongoDB shell version v5.0.6
 connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
-Implicit session: session { "id" : UUID("9538dd45-148f-4082-8cff-0d07bdb6f1e4") }
+Implicit session: session { "id" : UUID("00ab01f9-b6dd-44cc-82c8-f4f8868d6707") }
 MongoDB server version: 5.0.6
 { "acknowledged" : true, "matchedCount" : 2, "modifiedCount" : 2 }
