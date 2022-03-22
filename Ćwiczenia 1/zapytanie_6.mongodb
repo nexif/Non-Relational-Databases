@@ -1,0 +1,28 @@
+// Dodaj siebie do bazy, zgodnie z formatem danych użytych dla innych osób (dane dotyczące karty kredytowej, adresu zamieszkania i wagi mogą być fikcyjne)
+
+printjson(
+    db.people.insertOne(
+        {
+            "sex" : "Male",
+            "first_name" : "Mateusz",
+            "last_name" : "Kołcon",
+            "job" : "Programmer",
+            "email" : "mateusz_k@onet.pl",
+            "location" : {"city" : "Warsaw", "address" :  {"streetname" : "Krakowska", "streetnumber" : "1"}},
+            "description" : "Lorem ipsum",
+            "height" : 175,
+            "weight": 75,
+            "birth_date" : ISODate("1999-03-26"),
+            "nationality": "Poland",
+            "credit" : [
+                {"type" : "maestro",
+                "number" : "5435934534837934",
+                "currency" : "USD",
+                "balance" : "102.53"},
+                {"type" : "visa",
+                "number" : "3253463323432423",
+                "currency" : "PLN",
+                "balance" : "1412.12"}]
+        }
+    )
+)
