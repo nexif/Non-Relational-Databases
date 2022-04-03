@@ -1,0 +1,32 @@
+printjson(
+    db.people.mapReduce(
+        function(){
+
+            let key = this.nationality
+            let value = {total_weight: this.weight, total_height: this.height,count:1}
+            emit(key, value)
+        },
+        function(key, values){
+            bmi_arr = []
+            reduced = {total_weight: 0, total_height: 0, count:0}
+            values.forEach(function(value){
+                bmi_arr.push(value.total_weight/Math.pow(value.total_height/100,2))
+                reduced.total_weight += value.total_weight;
+                reduced.total_height += value.total_height;
+                reduced.count += value.count;
+            })
+            return reduced;
+        },
+        {
+        out:{inline:1},
+        finalize: function(key, reduced){
+            finalized = {}
+            finalized.avg_bmi = bmi_arr.reduce(function(a,b){return a+b})/bmi_arr.length
+            finalized.min_bmi = Math.min.apply(null, bmi_arr)
+            finalized.max_bmi = Math.max.apply(null, bmi_arr)
+
+            return finalized;
+        }
+        }
+    )
+)

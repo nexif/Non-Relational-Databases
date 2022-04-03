@@ -1,0 +1,24 @@
+{"t":{"$date":"2022-04-03T16:43:29.206Z"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"-","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":13},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":13},"outgoing":{"minWireVersion":0,"maxWireVersion":13},"isInternalClient":false}}}
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("4b1d6fc2-fe15-4c35-83e4-8baec052be43") }
+MongoDB server version: 5.0.6
+{
+	"results" : [
+		{
+			"_id" : "Male",
+			"value" : {
+				"average_weight" : 70.01077326872606,
+				"average_height" : 166.7363638199073
+			}
+		},
+		{
+			"_id" : "Female",
+			"value" : {
+				"average_weight" : 70.11331573604069,
+				"average_height" : 166.8126091370557
+			}
+		}
+	],
+	"ok" : 1
+}

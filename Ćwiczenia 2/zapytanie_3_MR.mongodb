@@ -1,0 +1,17 @@
+printjson(
+    db.people.mapReduce(
+        function(){
+            emit(this.job, 1);
+        },
+        function(key, value){
+            let jobs = [];
+            if (!jobs.includes(key)){
+                jobs.push(key);
+            }
+            return jobs;
+        },
+        {
+        out:{inline:1}
+        }
+    )
+)

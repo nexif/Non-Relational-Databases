@@ -1,0 +1,20 @@
+printjson(
+    db.people.mapReduce(
+        function(){
+        for(let i=0; i < this.credit.length; i++){
+            emit(this.credit[i].currency, this.credit[i].balance)
+        }
+        },
+        function(key, value){
+            reduced = {"total_funds": 0, "avg": 0}
+            let num_value = value.map(Number);
+            reduced.total_funds = Array.sum(num_value);
+            reduced.avg = reduced.total_funds / num_value.length;
+            return reduced;
+        },
+        {
+        out:{inline:1},
+        query:{"nationality":"Poland","sex": "Female"}
+        }
+    )
+)

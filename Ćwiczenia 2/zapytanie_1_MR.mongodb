@@ -1,0 +1,27 @@
+printjson(
+    db.people.mapReduce(
+        function(){
+            let key = this.sex
+            let value = {total_weight: this.weight, total_height: this.height,count:1}
+            emit(key, value)
+        },
+        function(key, values){
+            reduced = {total_weight: 0, total_height: 0, count:0}
+            values.forEach(function(value){
+                reduced.total_weight += value.total_weight;
+                reduced.total_height += value.total_height;
+                reduced.count += value.count;
+            })
+            return reduced;
+        },
+        {
+        out:{inline:1},
+        finalize: function(key, reduced){
+            finalized = {}
+            finalized.average_weight = reduced.total_weight / reduced.count;
+            finalized.average_height = reduced.total_height / reduced.count;
+            return finalized;
+        }
+        }
+    )
+)

@@ -1,0 +1,16 @@
+printjson(
+    db.people.mapReduce(
+        function(){
+        for(let i=0; i < this.credit.length; i++){
+            emit(this.credit[i].currency, this.credit[i].balance)
+        }
+        },
+        function(key, value){
+            let num_value = value.map(Number);
+            return Array.sum(num_value);
+        },
+        {
+        out:{inline:1}
+        }
+    )
+)
