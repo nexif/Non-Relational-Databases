@@ -10,3 +10,9 @@ My projects for "Non-relational databases" course
 ## Neo4j:
 
 - Ćwiczenia 3
+- Ćwiczenia 4
+
+## Riak:
+
+- Ćwiczenia 5
+- Ćwiczenia 6
