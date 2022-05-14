@@ -1,27 +1,26 @@
+// 1. Średnia wagę i wzrost osób w bazie z podziałem na płeć (tzn. osobno mężczyzn, osobno kobiet)
+
 printjson(
     db.people.mapReduce(
         function(){
-            let key = this.sex
-            let value = {total_weight: this.weight, total_height: this.height,count:1}
-            emit(key, value)
+            emit(this.sex, {weight: this.weight, height: this.height});
         },
         function(key, values){
-            reduced = {total_weight: 0, total_height: 0, count:0}
-            values.forEach(function(value){
-                reduced.total_weight += value.total_weight;
-                reduced.total_height += value.total_height;
-                reduced.count += value.count;
-            })
-            return reduced;
+            let total_weight = 0;
+            let total_height = 0;
+
+            values.forEach(el => {
+                total_weight += el.weight;
+                total_height += el.height;
+            });
+
+            return {
+                average_weight: total_weight / values.length
+                average_height: total_height / values.length
+            };
         },
         {
         out:{inline:1},
-        finalize: function(key, reduced){
-            finalized = {}
-            finalized.average_weight = reduced.total_weight / reduced.count;
-            finalized.average_height = reduced.total_height / reduced.count;
-            return finalized;
-        }
         }
     )
 )

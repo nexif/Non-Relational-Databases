@@ -1,4 +1,4 @@
-// Jedna kobieta narodowości chińskiej
+// 2. Jedna kobieta narodowości chińskiej
 
 printjson(
     db.people.findOne(

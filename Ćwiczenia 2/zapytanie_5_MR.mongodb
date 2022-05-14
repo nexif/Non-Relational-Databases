@@ -1,16 +1,16 @@
+// 5. Średnia i łączna ilość środków na kartach kredytowych kobiet narodowości polskiej w podziale na waluty
+
 printjson(
     db.people.mapReduce(
         function(){
-        for(let i=0; i < this.credit.length; i++){
-            emit(this.credit[i].currency, this.credit[i].balance)
-        }
+        this.credit.forEach(cc => {
+            emit(cc.currency, cc.balance)
+        });
         },
-        function(key, value){
-            reduced = {"total_funds": 0, "avg": 0}
-            let num_value = value.map(Number);
-            reduced.total_funds = Array.sum(num_value);
-            reduced.avg = reduced.total_funds / num_value.length;
-            return reduced;
+        function(key, values){
+            const total_funds = Array.sum(values);
+            const avg = total_funds / values.length;
+            return {total_funds, avg};
         },
         {
         out:{inline:1},

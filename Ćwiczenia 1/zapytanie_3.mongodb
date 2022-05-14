@@ -1,4 +1,4 @@
-// Lista mężczyzn narodowości niemieckiej
+// 3. Lista mężczyzn narodowości niemieckiej
 
 printjson(
     db.people.find(
