@@ -38,15 +38,16 @@ Przy pomocy operacji map-reduce i  frameworku do agregacji znajdź następujące
 9.	Zestaw zapytań powodujących uzupełnienie bazy danych o film Captain America: The First Avenger wraz z uzupełnieniem informacji o reżyserze, scenarzystach i odtwórcach głównych ról (w oparciu o skrócone informacje z IMDB - http://www.imdb.com/title/tt0458339/) + zapytanie pokazujące dodany do bazy film wraz odtwórcami głównych ról, scenarzystą i reżyserem. Plik SVG ma pokazywać wynik ostatniego zapytania.  
 
 ### Ćwiczenia 4:
-Część 1 – Wycieczki górskie:
+Część 1 – Wycieczki górskie
 Zaimportuj dane uruchamiając skrypt task2.cypher. Napisz następujące zapytania:  
 1.	Znajdź trasy którymi można dostać się z Darjeeling na Sandakphu, mające najmniejszą ilość etapów 
 2.	Znajdź mające najmniej etapów trasy którymi można dostać się z Darjeeling na Sandakphu i które mogą być wykorzystywane zimą 
 3.	Uszereguj trasy którymi można dostać się z Darjeeling na Sandakphu według dystansu 
 4.	Znajdź wszystkie miejsca do których można dotrzeć przy pomocy roweru (twowheeler) z Darjeeling latem
 
-Część 2 – Połączenia lotnicze:
+Część 2 – Połączenia lotnicze
 Zaimportuj dane uruchamiając skrypt task3.cypher. Napisz następujące zapytania:
+
 5.	Uszereguj porty lotnicze według ilości rozpoczynających się w nich lotów
 6.	Znajdź wszystkie porty lotnicze, do których da się dolecieć (bezpośrednio lub z przesiadkami) z Los Angeles (LAX) wydając mniej niż 3000 
 7.	Uszereguj połączenia, którymi można dotrzeć z Los Angeles (LAX) do Dayton (DAY) według ceny biletów 
