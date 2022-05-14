@@ -44,6 +44,7 @@ Zaimportuj dane uruchamiając skrypt task2.cypher. Napisz następujące zapytani
 2.	Znajdź mające najmniej etapów trasy którymi można dostać się z Darjeeling na Sandakphu i które mogą być wykorzystywane zimą 
 3.	Uszereguj trasy którymi można dostać się z Darjeeling na Sandakphu według dystansu 
 4.	Znajdź wszystkie miejsca do których można dotrzeć przy pomocy roweru (twowheeler) z Darjeeling latem
+
 Część 2 – Połączenia lotnicze:
 Zaimportuj dane uruchamiając skrypt task3.cypher. Napisz następujące zapytania:
 5.	Uszereguj porty lotnicze według ilości rozpoczynających się w nich lotów
