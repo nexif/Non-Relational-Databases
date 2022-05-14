@@ -1,0 +1,140 @@
+﻿[
+  {
+    "destination.name": "EWR"
+  },
+  {
+    "destination.name": "ORD"
+  },
+  {
+    "destination.name": "PIT"
+  },
+  {
+    "destination.name": "BWI"
+  },
+  {
+    "destination.name": "IAD"
+  },
+  {
+    "destination.name": "GRR"
+  },
+  {
+    "destination.name": "FAR"
+  },
+  {
+    "destination.name": "SGF"
+  },
+  {
+    "destination.name": "MSN"
+  },
+  {
+    "destination.name": "OMA"
+  },
+  {
+    "destination.name": "ROC"
+  },
+  {
+    "destination.name": "ABQ"
+  },
+  {
+    "destination.name": "SMF"
+  },
+  {
+    "destination.name": "DEN"
+  },
+  {
+    "destination.name": "SEA"
+  },
+  {
+    "destination.name": "PHX"
+  },
+  {
+    "destination.name": "OKC"
+  },
+  {
+    "destination.name": "MEM"
+  },
+  {
+    "destination.name": "LGA"
+  },
+  {
+    "destination.name": "SFO"
+  },
+  {
+    "destination.name": "PDX"
+  },
+  {
+    "destination.name": "PSP"
+  },
+  {
+    "destination.name": "RNO"
+  },
+  {
+    "destination.name": "BZN"
+  },
+  {
+    "destination.name": "SJC"
+  },
+  {
+    "destination.name": "BOS"
+  },
+  {
+    "destination.name": "LAS"
+  },
+  {
+    "destination.name": "ORF"
+  },
+  {
+    "destination.name": "TPA"
+  },
+  {
+    "destination.name": "MIA"
+  },
+  {
+    "destination.name": "PBI"
+  },
+  {
+    "destination.name": "MCO"
+  },
+  {
+    "destination.name": "AUS"
+  },
+  {
+    "destination.name": "IAH"
+  },
+  {
+    "destination.name": "MSY"
+  },
+  {
+    "destination.name": "BDL"
+  },
+  {
+    "destination.name": "RSW"
+  },
+  {
+    "destination.name": "CRP"
+  },
+  {
+    "destination.name": "TUL"
+  },
+  {
+    "destination.name": "MFE"
+  },
+  {
+    "destination.name": "DFW"
+  },
+  {
+    "destination.name": "CMH"
+  },
+  {
+    "destination.name": "FAT"
+  },
+  {
+    "destination.name": "TUS"
+  },
+  {
+    "destination.name": "FLL"
+  },
+  {
+    "destination.name": "SNA"
+  }
+]
