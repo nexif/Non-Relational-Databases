@@ -3,6 +3,7 @@
 My projects for "Non-relational databases" course
 
 
+---
 # MongoDB:
 ### Ćwiczenia 1:
 1.	Jedna osoba znajdująca się w bazie; 
@@ -25,6 +26,7 @@ Przy pomocy operacji map-reduce i  frameworku do agregacji znajdź następujące
 5.	Średnia i łączna ilość środków na kartach kredytowych kobiet narodowości polskiej w podziale na waluty.
 
 
+---
 # Neo4j:
 ### Ćwiczenia 3:
 1.	Wszystkie filmy
@@ -39,6 +41,7 @@ Przy pomocy operacji map-reduce i  frameworku do agregacji znajdź następujące
 
 ### Ćwiczenia 4:
 Część 1 – Wycieczki górskie
+
 Zaimportuj dane uruchamiając skrypt task2.cypher. Napisz następujące zapytania:  
 1.	Znajdź trasy którymi można dostać się z Darjeeling na Sandakphu, mające najmniejszą ilość etapów 
 2.	Znajdź mające najmniej etapów trasy którymi można dostać się z Darjeeling na Sandakphu i które mogą być wykorzystywane zimą 
@@ -46,6 +49,7 @@ Zaimportuj dane uruchamiając skrypt task2.cypher. Napisz następujące zapytani
 4.	Znajdź wszystkie miejsca do których można dotrzeć przy pomocy roweru (twowheeler) z Darjeeling latem
 
 Część 2 – Połączenia lotnicze
+
 Zaimportuj dane uruchamiając skrypt task3.cypher. Napisz następujące zapytania:
 
 5.	Uszereguj porty lotnicze według ilości rozpoczynających się w nich lotów
@@ -56,6 +60,7 @@ Zaimportuj dane uruchamiając skrypt task3.cypher. Napisz następujące zapytani
 10.	Znajdź najtańszą trasę łączącą 3 różne porty lotnicze
 
 
+---
 # Riak:
 ### Ćwiczenia 5:
 1.	Umieść w bazie (nazwa bucketa ma być Twoim numerem indeksu poprzedzonym literą „s”) 5 wartości, gdzie każda z nich ma być dokumentem json mającym 4 pola co najmniej dwóch różnych typów. 
