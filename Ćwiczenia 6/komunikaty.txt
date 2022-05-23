@@ -1,0 +1,6 @@
+POBRANE Z BAZY:
+{"author": "Robert Melville", "isbn": "1111979723", "title": "Moby Dick"}
+ZAKTUALIZOWANE DANE:
+{"author": "Herman Melville", "isbn": "1111979723", "release_year": 1851, "title": "Moby Dick"}
+PO USUNIECIU:
+None

@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvo+uFKxjYCg1zGBKZMxjZWAXZLjDlwUA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s26430>; rel="up"
+Last-Modified: Mon, 23 May 2022 14:07:03 GMT
+ETag: "GAOsXw0QUGTx4WSxS0dXR"
+Date: Mon, 23 May 2022 14:17:44 GMT
+Content-Type: application/json
+Content-Length: 67
+
+{"id":1, "forename": "Adam", "surname": "Nowak", "employed": false}%
